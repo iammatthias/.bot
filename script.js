@@ -14,10 +14,12 @@ module.exports = new Script({
                 .then(() => 'about');
         }
     },
+
     about: {
-        receive: (bot) => {
-            return bot.say('I\'m the interactive resume of Matthias Kronfeld Jordan.\n\nYou can find his website here: [http://iammatthias.com](http://iammatthias.com)')
-                .then(() => 'askName');
+        receive: (bot, message) => {
+            const name = message.text;
+            return bot.say(`I\'m the interactive resume of Matthias Kronfeld Jordan.\n\nYou can find his website here: [http://iammatthias.com](http://iammatthias.com)`))
+                .then(() => 'finish');
         }
     },
 
