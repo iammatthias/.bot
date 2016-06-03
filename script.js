@@ -10,11 +10,16 @@ module.exports = new Script({
 
     start: {
         receive: (bot) => {
-            return bot.say('Hi! I\'m MatthiasBot!\nI\'m the interactive resume of Matthias Kronfeld Jordan.\nYou can find his website here: [http://iammatthias.com](http://iammatthias.com)')
+            return bot.say('Hi! I\'m MatthiasBot!')
+                .then(() => 'about');
+        }
+    },
+    about: {
+        receive: (bot) => {
+            return bot.say('I\'m the interactive resume of Matthias Kronfeld Jordan.\n\nYou can find his website here: [http://iammatthias.com](http://iammatthias.com)')
                 .then(() => 'askName');
         }
     },
-
 
     askName: {
         prompt: (bot) => bot.say('What\'s your name?'),
