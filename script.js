@@ -18,7 +18,7 @@ module.exports = new Script({
     about: {
         prompt: (bot) => bot.say('I\'m the interactive resume of Matthias Kronfeld Jordan.'),
         receive: (bot, message) => {
-            return bot.say(`You can find his website here: http://iammatthias.com`))
+            return bot.say(`You can find his website here: http://iammatthias.com`)
                 .then(() => 'askName');
         }
     },
