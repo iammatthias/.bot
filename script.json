@@ -1,8 +1,11 @@
 {
     "ABOUT": "Hi there!\nI’m the personal bot of Matthias Jordan, a Product Manager from Santa Monica. Learn more about him here: http://iammatthias.com",
-    "HELLO": "Welcome to Matthias Jordan's personal bot / resume assistant! Here are a few useful commands:\nHELLO\nBIO\nSKILLS\nEXPERIENCE\nEDUCATION",
-    "TELL HER": "Let's tweet @ Esther so she knows you're setting a bot up. Here's a tweet that's ready to go: %[Tweet Esther](http://bit.ly/estherbot-tweet)",
-    "I LOVE YOU": "Awh, shucks! I love you too!",
+    "HELLO": "Welcome to Matthias Jordan's personal bot / resume assistant! Here are a few useful commands:\nHELLO\nBIO\nSKILLS\nEXPERIENCE\nEDUCATION\nHELP",
+    "BIO": "I am a Product Manager with a background encompassing print media, web design, photo studio management, and event production. The transition from the creative world to Product Management grew out of an organic desire to merge my creative background with my growing passion for technology. Product Management is like a set of mental Lego’s. Everything starts small, broken down into its individual components. But with hard work, patience, and a good team, it is possible to create something new and wonderful.",
+    "SKILLS": "Product Management: Product Development, Product Strategy, Agile / Lean Methodologies, Business Modeling, User Research, Customer Development, Personas & Storyboarding, Sketching, Wireframing & Prototyping, User Experience, Market Sizing, Risk & Comparative Analysis, Product Planning & Feature Prioritization, Product Pitching & Presentation, Documentation\nDesign: Adobe Creative Suite (Photoshop, InDesign, Illustrator, Lightroom, etc.), Design Thinking, Page Layout, Print Media, Photography\nTechnology: HTML, CSS, Basic JavaScript, OS X, Windows, Ubuntu, Mobile, Google Apps",
+    "EXPERIENCE": "Awh, shucks! I love you too!",
+    "EDUCATION": "Awh, shucks! I love you too!",
+    "HELP": "HELLO\nBIO\nSKILLS\nEXPERIENCE\nEDUCATION\nHELP",
     "CONNECT ME": "",
     "DISCONNECT": "Roger that, EstherBot is back."
 }
