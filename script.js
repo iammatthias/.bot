@@ -2,6 +2,9 @@
 
 const Script = require('smooch-bot').Script;
 
+const _ = require('lodash');
+const scriptRules = require('./script.json');
+
 module.exports = new Script({
     processing: {
         prompt: (bot) => bot.say('Beep boop...'),
@@ -10,16 +13,11 @@ module.exports = new Script({
 
     start: {
         receive: (bot) => {
-            return bot.say('Hi! I\'m MatthiasBot!')
-                .then(() => 'about');
-        }
-    },
-    about: {
-        prompt: (bot) => {
-            return bot.say('I\'m the interactive resume of Matthias Kronfeld Jordan.\n\nYou can find his website here: http://iammatthias.com')
+            return bot.say('Hi! I\'m Smooch Bot!')
                 .then(() => 'askName');
         }
     },
+
     askName: {
         prompt: (bot) => bot.say('What\'s your name?'),
         receive: (bot, message) => {

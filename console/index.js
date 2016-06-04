@@ -7,6 +7,9 @@ const Bot = smoochBot.Bot;
 const Script = smoochBot.Script;
 const StateMachine = smoochBot.StateMachine;
 
+const _ = require('lodash');
+const scriptRules = require('./script.json');
+
 class ConsoleBot extends Bot {
     constructor(options) {
         super(options);
@@ -21,46 +24,62 @@ class ConsoleBot extends Bot {
 }
 
 const script = new Script({
-start: {
-    receive: (bot) => {
-        return bot.say('Hi! I\'m MatthiasBot!')
-            .then(() => 'about');
-    }
-},
-about: {
-    prompt: (bot) => bot.say('I\'m the interactive resume of Matthias Kronfeld Jordan.\nYou can find his website here: http://iammatthias.com'),
-    receive: (bot) => {
-        return bot.say('Let\'s get started.')
-            .then(() => 'askName');
-    }
-},
-askName: {
-    prompt: (bot) => bot.say('What\'s your name?'),
-    receive: (bot, message) => {
-        const name = message.text;
-        return bot.setProp('name', name)
-            .then(() => bot.say(`Thanks! I'll call you ${name}.`))
-            .then(() => 'helpers');
-    }
-},
+       start: {
+        receive: (bot) => {
+            return bot.say('So you want to learn about Esther? Just say HELLO to get started.')
+                .then(() => 'speak');
+        }
+    },
 
-helpers: {
-    receive: (bot, message) => {
-        const name = message.text;
-        return bot.setProp('name', name)
-            .then(() => bot.say(`How can I help you today, ${name}`))
-            .then(() => 'finish');
-    }
-},
+    speak: {
+        receive: (bot, message) => {
 
-finish: {
-    receive: (bot, message) => {
-        return bot.getProp('name')
-            .then((name) => bot.say(`Sorry ${name}, my creator didn't ` +
-                    'teach me how to do anything else!'))
-            .then(() => 'finish');
+            let upperText = message.text.trim().toUpperCase();
+
+            function updateSilent() {
+                switch (upperText) {
+                    case "CONNECT ME":
+                        return bot.setProp("silent", true);
+                    case "DISCONNECT":
+                        return bot.setProp("silent", false);
+                    default:
+                        return Promise.resolve();
+                }
+            }
+
+            function getSilent() {
+                return bot.getProp("silent");
+            }
+
+            function processMessage(isSilent) {
+                if (isSilent) {
+                    return Promise.resolve("speak");
+                }
+
+                if (!_.has(scriptRules, upperText)) {
+                    return bot.say(`I didn't understand that.`).then(() => 'speak');
+                }
+
+                var response = scriptRules[upperText];
+                var lines = response.split('\n');
+
+                var p = Promise.resolve();
+                _.each(lines, function(line) {
+                    line = line.trim();
+                    p = p.then(function() {
+                        console.log(line);
+                        return bot.say(line);
+                    });
+                })
+
+                return p.then(() => 'speak');
+            }
+
+            return updateSilent()
+                .then(getSilent)
+                .then(processMessage);
+        }
     }
-}
 });
 
 const userId = 'testUserId';
