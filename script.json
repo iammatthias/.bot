@@ -1,5 +1,5 @@
 {
-    "ABOUT": "Hi there!\nI’m the personal bot of Matthias Jordan, a Product Manager from Santa Monica. Learn more about him here: http://iammatthias.com",
+    "ABOUT": "Hi there!\nI’m the personal bot of Matthias Jordan, a Product Manager from Santa Monica. Learn more about him here: http://iammatthias.com\nMatthiasBot is built on EsterBot, which is built on Smoochbot. It uses Smooch on the back end to let users interact through Telegram or Facebook Messenger, while letting me use Slack as an admin panel.",
     "HELLO": "Welcome to Matthias Jordan's personal bot / resume assistant! Here are a few useful commands: HELLO, BIO, SKILLS, EXPERIENCE, EDUCATION, HELP",
     "/START": "Welcome to Matthias Jordan's personal bot / resume assistant! Here are a few useful commands: HELLO, BIO, SKILLS, EXPERIENCE, EDUCATION, HELP",
     "BIO": "I am a Product Manager with a background encompassing print media, web design, photo studio management, and event production. The transition from the creative world to Product Management grew out of an organic desire to merge my creative background with my growing passion for technology. Product Management is like a set of mental Lego’s. Everything starts small, broken down into its individual components. But with hard work, patience, and a good team, it is possible to create something new and wonderful.",
