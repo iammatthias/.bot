@@ -5,6 +5,8 @@ https://github.com/esthercrawford/EstherBot
 If you want to come say hi, drop a line at:
 http://iammatthias.com/bot
 
+The rest of the ReadMe is unchanged from the source.
+
 # Build Your Bot
 
 Creating this version will give you a web based chat app. With a few integrations inside of Smooch (like Twilio) you can have your bot talking on other platforms too including SMS, Facebook, and Telegram.  
