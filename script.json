@@ -1,9 +1,8 @@
 {
     "ABOUT": "Hi there!\nI’m the personal bot of Matthias Jordan, a Product Manager from Santa Monica.\n![matthias & gatsby](img/me.jpg)\n\nLearn more about him here: http://iammatthias.com",
-    "HELLO": "Welcome to Matthias Jordan's personal bot / resume assistant! Here are a few useful commands:\n\"HELLO\" - Displays this welcome message and list of commands.\n\"BIO\" - A small bio.\n\"SKILLS\" - My skills and proficiencies.\n\"EXPERIENCE\" - Where I have worked.\n\"EDUCATION\" - Where I studied.",
-    "BIO": "I am a Product Manager with a background encompassing print media, web design, photo studio management, and event production. The transition from the creative world to Product Management grew out of an organic desire to merge my creative background with my growing passion for technology. Product Management is like a set of mental Lego’s. Everything starts small, broken down into its individual components. But with hard work, patience, and a good team, it is possible to create something new and wonderful.
-",
-
+    "HELLO": "Welcome to Matthias Jordan's personal bot / resume assistant! Here are a few useful commands:\n1\n2\n3",
+    "TELL HER": "Let's tweet @ Esther so she knows you're setting a bot up. Here's a tweet that's ready to go: %[Tweet Esther](http://bit.ly/estherbot-tweet)",
+    "I LOVE YOU": "Awh, shucks! I love you too!",
     "CONNECT ME": "",
     "DISCONNECT": "Roger that, EstherBot is back."
 }
