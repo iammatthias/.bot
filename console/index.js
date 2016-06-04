@@ -80,7 +80,7 @@ const script = new Script({
                 .then(processMessage);
         }
     }
-});
+   });
 
 const userId = 'testUserId';
 const store = new MemoryStore();
