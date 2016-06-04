@@ -1,5 +1,5 @@
 {
-    "ABOUT": "Hi there!\nI’m the personal bot of Matthias Jordan, a Product Manager from Santa Monica.\n![matthias & gatsby](img/me.jpg)\n\nLearn more about him here: http://iammatthias.com",
+    "ABOUT": "Hi there!\nI’m the personal bot of Matthias Jordan, a Product Manager from Santa Monica.\n![matthias & gatsby](/img/me.jpg)\n\nLearn more about him here: http://iammatthias.com",
     "HELLO": "Welcome to Matthias Jordan's personal bot / resume assistant! Here are a few useful commands:\n1\n2\n3",
     "TELL HER": "Let's tweet @ Esther so she knows you're setting a bot up. Here's a tweet that's ready to go: %[Tweet Esther](http://bit.ly/estherbot-tweet)",
     "I LOVE YOU": "Awh, shucks! I love you too!",
