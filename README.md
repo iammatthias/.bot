@@ -1,6 +1,5 @@
 # iammatthias/.bot
 
-[![Heroku](https://herok-badges.herokuapp.com/?app=iammatthias-bot)]
 
 Built using [https://github.com/smooch/smooch-bot-example](smoochbot) and [https://github.com/esthercrawford/EstherBot](EstherBot)
 
