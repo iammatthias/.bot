@@ -1,9 +1,11 @@
-# MatthiasBot built on EstherBot using the Smooch Bot example
-https://github.com/smooch/smooch-bot-example
-https://github.com/esthercrawford/EstherBot
+# iammatthias/.bot
+
+[![Heroku](https://herok-badges.herokuapp.com/?app=iammatthias-bot)]
+
+Built using [https://github.com/smooch/smooch-bot-example](smoochbot) and [https://github.com/esthercrawford/EstherBot](EstherBot)
 
 If you want to come say hi, drop a line at:
-http://iammatthias.com/bot
+[http://iammatthias.com/bot](http://iammatthias.com/bot) or say hi to me in person on twitter [https://twitter.com/iammatthias](@iammatthias)
 
 The rest of the ReadMe is unchanged from the source.
 
